@@ -8,6 +8,14 @@ export interface GameMeta {
 
 export const games: GameMeta[] = [
   {
+    slug: "faces",
+    title: "Faces (Mặt cười)",
+    description:
+      "Đảo các khuôn mặt liền kề và tìm cách biến cả bốn thành mặt cười.",
+    emoji: "\u{1F603}",
+    status: "available",
+  },
+  {
     slug: "pacman",
     title: "Dot Muncher (Pac-Man)",
     description:
