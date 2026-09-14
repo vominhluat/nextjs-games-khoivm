@@ -42,6 +42,31 @@ export default function FacesGame() {
         <strong>{moves}</strong>
       </div>
 
+      <section className={styles.instructions} aria-labelledby="how-to-play">
+        <div className={styles.instructionsHeading}>
+          <span aria-hidden="true">💡</span>
+          <div>
+            <h2 id="how-to-play">Luật chơi</h2>
+            <p>Đưa cả 4 khuôn mặt về trạng thái cười.</p>
+          </div>
+        </div>
+        <ul>
+          <li>
+            <strong>Chọn mặt số 1 hoặc 4:</strong> mặt được chọn và 1 mặt liền
+            kề sẽ đổi biểu cảm.
+          </li>
+          <li>
+            <strong>Chọn mặt số 2 hoặc 3:</strong> mặt được chọn và 2 mặt liền
+            kề sẽ đổi biểu cảm.
+          </li>
+          <li>
+            Mỗi mặt sẽ đổi qua lại giữa <strong>cười</strong> và
+            <strong> mếu</strong>. Bạn có thể nhấp chuột, chạm màn hình hoặc dùng
+            phím Tab rồi Enter/Space.
+          </li>
+        </ul>
+      </section>
+
       <div className={styles.board} aria-label="Bốn khuôn mặt">
         {faces.map((isHappy, index) => (
           <button

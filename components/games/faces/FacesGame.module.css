@@ -79,6 +79,50 @@
   background: var(--ink);
 }
 
+.instructions {
+  margin-top: 24px;
+  border: 1px solid rgba(138, 79, 194, 0.14);
+  border-radius: 22px;
+  padding: 18px 20px;
+  background: rgba(255, 255, 255, 0.58);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.instructionsHeading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.instructionsHeading > span {
+  font-size: 1.6rem;
+}
+
+.instructionsHeading h2 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.instructionsHeading p {
+  margin: 2px 0 0;
+  color: rgba(41, 48, 71, 0.66);
+  font-size: 0.88rem;
+}
+
+.instructions ul {
+  display: grid;
+  gap: 7px;
+  margin: 14px 0 0;
+  padding-left: 22px;
+  color: rgba(41, 48, 71, 0.74);
+  font-size: 0.87rem;
+  line-height: 1.5;
+}
+
+.instructions li::marker {
+  color: #8a4fc2;
+}
+
 .board {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -251,6 +295,10 @@
   .faceButton {
     border-radius: 18px;
     padding-inline: 4px;
+  }
+
+  .instructions {
+    padding: 16px;
   }
 }
 
